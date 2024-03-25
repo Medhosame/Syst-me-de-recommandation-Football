@@ -4,7 +4,7 @@ import pandas as pd
 
 
 app = Dash(__name__, use_pages=True)
-
+server=app.server
 app.layout = html.Div([
     dash.page_container,
     dcc.Store(id="store"),
