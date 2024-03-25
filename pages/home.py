@@ -288,6 +288,7 @@ def update_outputs(n_clicks, name,player_name):
                             html.Div([
                                 html.Div([
                                     html.H2([player_info1["Name"].values[0].replace("-"," "), html.Span(f" {player_info1['overallRating'].values[0]}", className='rating')]),
+                                    html.Img(src=player_info1['avatarUrl'].values[0]),
                                     html.Div([
                                         html.Div('ST / LW / RW', className='positions'),
                                         html.Div([
@@ -311,6 +312,7 @@ def update_outputs(n_clicks, name,player_name):
                                 dcc.Graph(figure=create_Scatterpolar(df, name, player_name)),
                                 html.Div([
                                     html.H2([player_info2['Input_Player'].values[0].replace("-"," ").split("(")[0], html.Span(player_info2['overallRating'].values[0], className='rating')]),
+                                    html.Img(src=player_info2['avatarUrl'].values[0]),
                                     html.Div([
                                         html.Div('RW / LW', className='positions'),
                                         html.Div([
