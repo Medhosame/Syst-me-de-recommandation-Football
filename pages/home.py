@@ -322,11 +322,12 @@ def update_outputs(n_clicks, name,player_name):
                                             html.Div(['Physical: ', html.Span(player_info2['phy'].values[0], className='value')], className='attribute')
                                         ], className='attributes'),
                                         html.Div([
-                                            html.Div(['Skill Moves: ', html.Span('★★★★★', className='stars')], className='skill-moves'),
-                                            html.Div(['Weak Foot: ', html.Span('★★★★★', className='stars')], className='weak-foot')
+                                            html.Div(['Club Actuelle: ', html.Span(children=[html.Span(player_info2["Club Actuelle"].values[0])], className='stars')], className='skill-moves'),
+                                            html.Div(['Championnat: ', html.Span(children=[html.Span(player_info2["Championat"].values[0])], className='stars')], className='weak-foot')
                                         ], className='skills'),
-                                        html.Div(f'Preferred Foot: {player_info2["Meilleur Pieds"].values[0]}', className='foot'),
-                                        html.Div('Work Rates: High / Medium', className='work-rate'),
+                                        html.Div(f'Meilleur Pieds: {player_info2["Meilleur Pieds"].values[0]}', className='foot'),
+                                        html.Div(f'Poids: {player_info2["Poids"].values[0]} Kg', className='work-rate'),
+                                        html.Div(f'Taille: {player_info2["Taille"].values[0]} Cm', className='work-rate'),
                                         html.Div(f'Age: {player_info2["Age"].values[0]}', className='age')
                                     ], className='player-info')
                                 ], className='player-card di-maria')
