@@ -1,0 +1,128 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header, .parameters, .recommendations {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #f8f8f2;
+}
+
+p {
+    color: #bbb;
+}
+
+.parameters h2, .recommendations h2 {
+    margin-bottom: 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #777;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #555;
+}
+
+
+/* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+} */
+
+.player-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-card {
+    background-color: rgba(0,0,0,0.1);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 10px;
+}
+
+.player-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #ffd700;
+}
+
+.player-info {
+    font-size: 16px;
+}
+
+.positions {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.attributes .attribute {
+    margin: 5px 0;
+}
+
+.attributes .value {
+    font-weight: bold;
+    color: limegreen;
+}
+
+.skills {
+    margin-top: 10px;
+}
+
+.skills .skill-moves,
+.skills .weak-foot {
+    margin: 5px 0;
+}
+
+.stars {
+    color: #ffd700;
+}
+
+.foot, .work-rate, .age {
+    margin: 5px 0;
+}
+
+
+.containerComparaison{
+    background-color: rgba(34, 37, 47, 1);
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 30px;
+}

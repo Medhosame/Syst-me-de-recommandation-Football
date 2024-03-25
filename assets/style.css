@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    background-color: rgba(28,29,35,255);
+}
+
+
+/* Header */
+.Header{
+    text-align: center;
+    width: 100%;
+    color: blue;
+    font-size: 30px;
+    background-color: rgba(28,29,35,255);
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    display: grid ;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+}
+/* .Headerright{
+    display: grid ;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+.Headerright1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Headerright11{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+} */
+.container3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+    
+}
+.player-stats {
+            background-color: #111827;
+            color: white;
+            display: grid;
+            grid-template-columns: 2fr 3fr 4fr;
+            grid-template-rows: 1fr;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            border-radius: 10px;
+        }
+.player-stats img {
+            border-radius: 50%;
+        }
+.container31{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.container32{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 14px;
+    border-right: solid rgba(89,90,97,255);
+}
+.container311 {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items:start ;
+            justify-content: center;
+        }
+.player-stats span {
+            font-size: 35px;
+            font-family: 'Helvetica', sans-serif;
+        }
+.player-stats .label {
+            opacity: 0.75;
+            font-size: 20px
+        }
+.container1{
+    display: flex;
+    justify-content: center;
+}
+.container1 .club-logo {
+            height: auto;
+            width: 100px;
+            border-radius: 100%;
+            /* width: 100%;
+            height: 100%; */
+            object-fit:cover ;
+            object-position: center;
+
+        }
+.player-stats .player-photo {
+            /* height: 70px;
+            margin: 0 20px; */
+            height: auto;
+            width: 100px;
+            border-radius: 50%;
+        }
+.flag-icon {
+            width: 70px;
+            height: auto;
+            border-radius: 100%;
+        }
+/* body */
+/* Define individual grid items */
+.left { 
+    grid-area: lefts; 
+}
+.right1 { 
+    grid-area: right1; 
+}
+.right2 { 
+    grid-area: right2; 
+}
+
+.right3 { 
+    grid-area: right3; 
+}
+
+.right4 { 
+    grid-area: right4; 
+}
+
+/* Define the grid container and areas */
+.body {
+    /* text-align: center; */
+    color: blue;
+    font-size: 30px;
+    background-color: rgba(34, 37, 47, 255);
+    display: grid;
+    gap: 25px;
+    padding: 0; /* Reset padding */
+    margin: 20px; /* Apply uniform margin */
+    grid-template-columns: 3fr 3fr 2fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'lefts  right1 right1 right2'
+        'lefts  right3 right4 right4';
+}
+/* Right Part */
+
+/* For bold labels */
+.label {
+    font-weight: bold;
+}
+
+/* For value fields */
+.value {
+    margin-bottom: 10px; /* Adds spacing between the fields */
+
+}
+
+/* For position tag */
+.position-tag {
+    background-color: blue; /* Replace with the actual color code you want */
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 5px;
+}
+/* Left Part */
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:7px;
+}
+.poste{
+    color: grey;
+    justify-content: start;
+    width: 416px;
+    padding: 0px 0px 0px 20px;
+    margin-left: 60px;
+    margin-top: 0px;
+}
+.left11 {
+    top: 0;
+    left: 0;
+    font-size: 5em;
+    color: rgba(255, 249, 249, 0.704);
+    object-fit:cover ;
+    object-position: center;
+    z-index: 0;
+  }
+.PlayerAndFlag{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:'center';
+    gap: 5px;
+    padding: 30px 0px 20px 20px;
+    margin-left: 50px;
+}
+
+.PlayerAndFlag .title{
+    font-size: 35px;
+    font-family: 'Helvetica', sans-serif;
+    color:white;
+    margin: 0px;
+    margin-top: 25px;
+    text-align: start;
+    
+}
+.PlayerAndFlag img{
+    width: 100px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.profile-card {
+    background-color:rgba(28,29,35,255);;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  .profile-card .detail {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  .profile-card .detail label {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .profile-card .detail .value {
+    display: block;
+    color: white;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .profile-card .detail .badge {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 0px;
+  }
+  .profile-card .detail .badge-green {
+    background-color: #28a745;
+  }
+  .profile-card .detail .value-id {
+    font-family: 'Courier New', monospace;
+  }
+  .profile-card .suggest-link {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+.right2{margin-top: 30px;}
+.left{margin-top: 30px;}
+.right3{margin-top: 30px;}
+.right4{margin-top: 30px;}
+
+.right1{
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(28,29,35,255);
+    margin-top: 30px;
+    
+}
+
+
+/* General styles for the card */
+.attribute-card {
+    color: #fff;
+    background-color: #333;
+    margin: 10px 20px 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.attribute-title {
+    font-weight: bold;
+}
+
+/* Styles for the bars */
+.attribute-bar {
+    width: 100%;
+    background-color: #ddd;
+    height: 10px;
+    margin: 5px 0;
+}
+
+.attribute-bar-inner {
+    height: 10px;
+}
+
+/* Colors for the bars */
+.green-bar {
+    background-color: green;
+}
+
+.orange-bar {
+    background-color: orange;
+}
+
+
+.Select-menu-outer .Select-option {
+    color: black !important; /* Change la couleur de texte en noir */
+    margin-bottom: 5px; /* Espacement entre les options */
+    padding: 8px 10px; /* Espacement intérieur pour chaque option */
+}
