@@ -1,3 +1,8 @@
 dash==2.16.1
 pandas
 gunicorn
+parquet
+plotly
+joblib
+numpy
+pyarrow
